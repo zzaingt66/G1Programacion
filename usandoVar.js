@@ -18,3 +18,9 @@ if (true) {
 
 var team = [pokemon1, pokemon2, pokemon3, pokemon4, pokemon5, pokemon6];
 console.log(team); // [ 'Snorlax', 'Jigglypuff', 'Bulbasaur', 'Squirtle', 'Mewtwo', 'Eevee' ] y cambian los valores de pokemon1 y pokemon2
+
+/*  Este código muestra cómo funciona 'var'. 
+ Las variables declaradas con 'var' **no respetan el alcance de bloque**, 
+ por lo que si las cambiamos dentro de un 'if', también cambian fuera.
+ Por ejemplo, pokemon1 originalmente es "Pikachu", 
+ pero dentro del 'if' se reasigna a "Snorlax" y al imprimir el arreglo, el cambio se refleja globalmente.*/
