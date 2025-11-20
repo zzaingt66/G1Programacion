@@ -1,4 +1,3 @@
-
 // usando const
 /*  Exercise 1 */
 const pokemon1 = "Pikachu";

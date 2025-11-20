@@ -28,3 +28,5 @@ equipo[1] = "Gengar";
 
 let turno = 1
 turno ++;
+console.log(equipo, turno);
+
