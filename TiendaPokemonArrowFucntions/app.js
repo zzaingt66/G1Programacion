@@ -1,11 +1,11 @@
-/*  punto 1 */
-
+/* base code */
 const carrito = [
   { item: "Poción", precio: 300 },
   { item: "Pokebola", precio: 200 },
   { item: "Antídoto", precio: 150 }
 ];
 
+/*  punto 1 */
 const precios = () => {
    return carrito.map(p => p.precio);
 }
