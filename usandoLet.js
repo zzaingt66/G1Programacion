@@ -20,6 +20,7 @@ if (true) {
 }
 
 
+// usando let tiene ambito de bloque y permite reasignacion
 
 let team = [pokemon1, pokemon2, pokemon3, pokemon4, pokemon5, pokemon6];
 console.log(team); // [ 'Pikachu', 'Charizard', 'Bulbasaur', 'Squirtle', 'Mewtwo', 'Eevee' ] y no cambian los valores de pokemon1 y pokemon2
