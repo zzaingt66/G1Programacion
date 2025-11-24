@@ -54,8 +54,17 @@ const categorias = () => {
     return carrito.map(p => p.precio > 200 ? 'PREMIUM' : 'BASICO');
 }
 
+const filas = carrito.map(p => ({
+    Item: p.item,
+    Precio: `$${p.precio.toFixed(2)}`,
+    '20% desc': conDescuento()[carrito.indexOf(p)],
+    '16% impuesto': sumarimpuestos()[carrito.indexOf(p)],
+    'Precio final': precioFinal()[carrito.indexOf(p)],
+    'Categoria': categorias()[carrito.indexOf(p)]
+}))
+console.table(filas);
 
-console.table({
+/* console.table({
     "Precios originales": precios(),
     "Mayores a 200": filtrarPrecios(),
     "Precios con 20% desc": conDescuento(),
@@ -64,7 +73,7 @@ console.table({
     "Precio final (desc + imp)": precioFinal(),
     "Categoria": categorias()
 
-});
+}); */
 
 
 
